@@ -70,10 +70,10 @@ export default function ContactForm() {
               CI/CD pipelines, or any development projects.
             </p>
             <div className="contact-item">
-              <strong>Email:</strong> john.sample@email.com
+              <strong>Email:</strong> emmanuel_borja@hotmail.com
             </div>
             <div className="contact-item">
-              <strong>Location:</strong> San Francisco, CA
+              <strong>Location:</strong> Guadalajara, Jalisco, Mexico
             </div>
           </div>
           <form className="contact-form" onSubmit={handleSubmit} data-aos="fade-left" data-aos-duration="1000">

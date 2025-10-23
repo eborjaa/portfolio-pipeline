@@ -16,7 +16,7 @@ export default function Hero() {
           <span className="hero-greeting">Hello, I am</span>
           <h1 className="hero-heading">Emmanuel Borja</h1>
           <span className="hero-heading-subtitle">
-            SDET & Software Developer
+            SDET
           </span>
           <p className="hero-description">
             Passionate about creating robust testing frameworks, implementing CI/CD pipelines, 
@@ -28,7 +28,7 @@ export default function Hero() {
           </div>
           <div className="about-social-list">
             <div className="social-links-row">
-              <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/eborjaa" target="_blank" rel="noopener noreferrer">
                 <Image
                   src="/img/social_icons/github.svg"
                   alt="Link to GitHub account"
@@ -36,7 +36,7 @@ export default function Hero() {
                   height={24}
                 />
               </a>
-              <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/emmanuelborja21/" target="_blank" rel="noopener noreferrer">
                 <Image
                   src="/img/social_icons/linkedin.svg"
                   alt="Link to LinkedIn profile"
@@ -44,7 +44,7 @@ export default function Hero() {
                   height={24}
                 />
               </a>
-              <a href="mailto:your.email@example.com">
+              <a href="mailto:emmanuel_borja@hotmail.com">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
                   <polyline points="22,6 12,13 2,6"/>

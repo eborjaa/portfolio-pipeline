@@ -6,51 +6,30 @@ export default function Works() {
   const projects = [
     {
       id: 1,
-      title: 'E-commerce Test Automation',
-      description: 'Comprehensive test suite for e-commerce platform',
+      title: 'Portfolio CI/CD Pipeline',
+      description: 'Automated Playwright tests triggered via Jenkins, generating HTML reports and artifact uploads with Newman',
       category: 'Test Automation',
       image: '/img/works/01.jpg',
-      technologies: ['Playwright', 'TypeScript', 'Jenkins']
+      technologies: ['Playwright', 'Jenkins', 'Newman', 'HTML Reports'],
+      github: 'https://github.com/eborjaa/portfolio-pipeline'
     },
     {
       id: 2,
-      title: 'API Testing Framework',
-      description: 'RESTful API testing framework with Postman',
-      category: 'API Testing',
+      title: 'Web Application Test Suite',
+      description: 'Led automation efforts achieving 100% test coverage and reducing manual testing time by 50%',
+      category: 'Test Automation',
       image: '/img/works/02.jpg',
-      technologies: ['Postman', 'Newman', 'Node.js']
+      technologies: ['Playwright', 'POM', 'COM', 'Jenkins CI'],
+      github: '#'
     },
     {
       id: 3,
-      title: 'CI/CD Pipeline Setup',
-      description: 'Jenkins pipeline for automated testing and deployment',
-      category: 'DevOps',
+      title: 'Enterprise QA Automation',
+      description: 'Orchestrated QA automation for enterprise applications, overseeing patch release approvals and regression testing',
+      category: 'Quality Assurance',
       image: '/img/works/03.jpg',
-      technologies: ['Jenkins', 'Docker', 'AWS']
-    },
-    {
-      id: 4,
-      title: 'SDET Portfolio',
-      description: 'Modern portfolio showcasing testing and development skills',
-      category: 'Web Development',
-      image: '/img/works/04.jpg',
-      technologies: ['Next.js', 'React', 'TypeScript']
-    },
-    {
-      id: 5,
-      title: 'Mobile App Testing',
-      description: 'Cross-platform mobile application testing suite',
-      category: 'Mobile Testing',
-      image: '/img/works/05.jpg',
-      technologies: ['Appium', 'Java', 'Selenium']
-    },
-    {
-      id: 6,
-      title: 'Performance Testing',
-      description: 'Load testing and performance optimization',
-      category: 'Performance Testing',
-      image: '/img/works/06.jpg',
-      technologies: ['JMeter', 'K6', 'Grafana']
+      technologies: ['Selenium', 'POM Framework', 'Jenkins', 'Regression Testing'],
+      github: '#'
     }
   ];
 
@@ -72,7 +51,7 @@ export default function Works() {
               data-aos-delay={index * 300}
               data-aos-duration="1000"
             >
-              <a href="#!">
+              <a href={project.github} target="_blank" rel="noopener noreferrer">
                 <Image
                   className="project-img"
                   src={project.image}
@@ -83,7 +62,7 @@ export default function Works() {
                 <div className="project-mask">
                   <div className="project-caption">
                     <h5 className="white">{project.title}</h5>
-                    <p className="white">{project.category}</p>
+                    <p className="white">{project.description}</p>
                     <div className="project-technologies">
                       {project.technologies.map((tech, techIndex) => (
                         <span key={techIndex} className="tech-tag">

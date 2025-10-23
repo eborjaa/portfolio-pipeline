@@ -20,7 +20,7 @@ export default function Header() {
             data-aos="fade-down"
             data-aos-duration="1000"
           >
-            J.Sample
+            Emmanuel Borja
           </a>
           <nav id="nav" className="nav">
             <ul 
@@ -35,7 +35,13 @@ export default function Header() {
                 <a href="#about" className="nav-link">About</a>
               </li>
               <li className="nav-item">
-                <a href="#projects" className="nav-link">Works</a>
+                <a href="#skills" className="nav-link">Skills</a>
+              </li>
+              <li className="nav-item">
+                <a href="#projects" className="nav-link">Projects</a>
+              </li>
+              <li className="nav-item">
+                <a href="#experience" className="nav-link">Experience</a>
               </li>
               <li className="nav-item">
                 <a href="#contact" className="nav-link">Contact</a>

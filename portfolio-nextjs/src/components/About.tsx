@@ -11,27 +11,27 @@ export default function About() {
         </h2>
         <div className="about-row">
           <div className="about-content" data-aos="fade-right" data-aos-duration="1000">
-            <h3>SDET & Software Developer</h3>
+            <h3>Quality Assurance Automation Engineer</h3>
             <p>
-              I'm a passionate Software Development Engineer in Test with expertise in 
-              automation testing, CI/CD pipelines, and modern web development. I specialize 
-              in creating robust testing frameworks and ensuring software quality through 
-              comprehensive test automation.
+              I'm a Quality Assurance Automation Engineer with 3+ years of experience 
+              in test automation, CI/CD pipelines, and quality assurance. I specialize in 
+              creating robust testing frameworks and ensuring software quality through 
+              comprehensive automation strategies.
             </p>
             <p>
-              With experience in Playwright, Selenium, API testing, and Jenkins pipelines, 
-              I help teams deliver high-quality software through effective testing strategies 
-              and continuous integration practices.
+              I've led automation efforts across various applications, achieving 100% test 
+              automation coverage and reducing manual testing time by 50%. My expertise 
+              spans Playwright, Selenium, Jenkins CI, and API testing.
             </p>
             <div className="about-skills">
               <h4>Key Skills:</h4>
               <ul>
-                <li>Test Automation (Playwright, Selenium, Cypress)</li>
+                <li>Test Automation (Playwright, Selenium, Jenkins CI)</li>
                 <li>API Testing (Postman, Newman, REST Assured)</li>
                 <li>CI/CD Pipelines (Jenkins, GitHub Actions)</li>
-                <li>Frontend Development (React, Next.js, TypeScript)</li>
-                <li>Backend Development (Node.js, Python, Java)</li>
-                <li>Quality Assurance & Testing Strategies</li>
+                <li>Programming (Python, JavaScript, CSS, HTML, C)</li>
+                <li>Test Strategies (Regression, API, Unit Testing)</li>
+                <li>Project Management (Agile, Jira, Scrum)</li>
               </ul>
             </div>
           </div>
@@ -41,12 +41,12 @@ export default function About() {
               <p>Years Experience</p>
             </div>
             <div className="stat-item">
-              <h4>50+</h4>
-              <p>Projects Completed</p>
+              <h4>100%</h4>
+              <p>Test Automation</p>
             </div>
             <div className="stat-item">
-              <h4>100%</h4>
-              <p>Test Coverage</p>
+              <h4>50%</h4>
+              <p>Time Reduction</p>
             </div>
           </div>
         </div>

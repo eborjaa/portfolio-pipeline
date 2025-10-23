@@ -58,36 +58,115 @@
 .theme-toggle {
   position: fixed;
   top: 20px;
-  right: 20px;
+  right: 15px;
   z-index: 1000;
-  background: var(--white-color);
-  border: 2px solid var(--primary-accent);
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  width: 48px;
+  height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
 .theme-toggle:hover {
-  transform: scale(1.1);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
 }
 
 .theme-toggle svg {
   width: 20px;
   height: 20px;
-  color: var(--primary-accent);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+.theme-toggle:active {
+  transform: translateY(0);
+  transition: all 0.1s ease;
+}
+
+/* Responsive positioning for theme toggle */
+@media (max-width: 768px) {
+  .theme-toggle {
+    top: 15px;
+    right: 15px;
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+  }
+  
+  .theme-toggle svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .theme-toggle {
+    top: 12px;
+    right: 12px;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+  }
+  
+  .theme-toggle svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+/* Ensure navigation doesn't overlap with theme toggle */
+@media (max-width: 1200px) {
+  .header-nav {
+    padding-right: 100px; /* Add more space for theme toggle */
+  }
+}
+
+@media (max-width: 768px) {
+  .header-nav {
+    padding-right: 90px; /* Add space for theme toggle */
+  }
+}
+
+@media (max-width: 480px) {
+  .header-nav {
+    padding-right: 80px; /* Adjust space for smaller theme toggle */
+  }
+}
+
+/* Reduce navigation gap on smaller screens to prevent overlap */
+@media (max-width: 1200px) {
+  .nav-list {
+    column-gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-list {
+    column-gap: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-list {
+    column-gap: 20px;
+  }
 }
 
 /* Hero section styles */
 .hero {
   padding: 120px 0 80px;
-  background-color: var(--primary-bg-color);
+  background: linear-gradient(135deg, #1a0a2a 0%, #0a1a2a 25%, #0a2a2a 50%, #1a2a1a 75%, #2a1a0a 100%);
+  background-attachment: fixed;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -119,6 +198,143 @@
 
 .hero-buttons .btn {
   margin: 0;
+}
+
+/* Skills section styles */
+.skills {
+  padding: 80px 0;
+  background-color: var(--primary-bg-color);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+.skills .title {
+  color: var(--text-color);
+}
+
+.skill-category {
+  background: var(--secondary-bg-color);
+  border: 1px solid var(--border-color);
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.skill-category:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.skill-category h3 {
+  color: var(--text-color);
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.skill-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.skill-badge {
+  background: var(--secondary-accent);
+  color: var(--white-color) !important;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.skill-badge:hover {
+  transform: translateY(-2px);
+  background: var(--primary-accent);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Work Experience styles */
+.experience {
+  padding: 80px 0;
+  background: var(--supportive-bg-color);
+}
+
+.experience-timeline {
+  margin-top: 50px;
+}
+
+.experience-item {
+  background: var(--white-color);
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid var(--primary-accent);
+}
+
+.experience-header h3 {
+  color: var(--primary-accent);
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.experience-company {
+  color: var(--secondary-accent);
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.company-link {
+  color: var(--secondary-accent);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid transparent;
+}
+
+.company-link:hover {
+  color: var(--primary-accent);
+  border-bottom: 1px solid var(--primary-accent);
+  text-decoration: none;
+}
+
+.experience-duration {
+  color: var(--supportive-text-color);
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.experience-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.experience-content li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+.experience-content li::before {
+  content: "•";
+  color: var(--primary-accent);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
 }
 
 /* Contact form specific styles */
@@ -157,6 +373,14 @@
   padding: 40px;
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .btn-primary {
+  display: block;
+  margin: 20px auto 0;
+  width: fit-content;
+  text-align: center;
+  letter-spacing: 0.1em;
 }
 
 .form-group {
