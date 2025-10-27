@@ -30,12 +30,16 @@ export default function ContactForm() {
   const validateForm = (): boolean => {
     const newErrors: FormErrors = {};
     
+    // Name validation
     if (!formData.name.trim()) {
       newErrors.name = 'Name is required';
     } else if (formData.name.length > 100) {
       newErrors.name = 'Name must be less than 100 characters';
+    } else if (!/^[a-zA-Z\s\-'\.]+$/.test(formData.name.trim())) {
+      newErrors.name = 'Name contains invalid characters';
     }
     
+    // Email validation
     if (!formData.email.trim()) {
       newErrors.email = 'Email is required';
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
@@ -44,16 +48,22 @@ export default function ContactForm() {
       newErrors.email = 'Email must be less than 254 characters';
     }
     
+    // Subject validation
     if (!formData.subject.trim()) {
       newErrors.subject = 'Subject is required';
     } else if (formData.subject.length > 200) {
       newErrors.subject = 'Subject must be less than 200 characters';
+    } else if (formData.subject.trim().length < 3) {
+      newErrors.subject = 'Subject must be at least 3 characters';
     }
     
+    // Message validation
     if (!formData.message.trim()) {
       newErrors.message = 'Message is required';
     } else if (formData.message.length > 2000) {
       newErrors.message = 'Message must be less than 2000 characters';
+    } else if (formData.message.trim().length < 10) {
+      newErrors.message = 'Message must be at least 10 characters';
     }
     
     setErrors(newErrors);
