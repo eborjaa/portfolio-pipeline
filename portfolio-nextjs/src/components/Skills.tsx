@@ -28,15 +28,6 @@ export default function Skills() {
           </div>
           
           <div className="skill-category" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-            <h3>Frameworks</h3>
-            <div className="skill-badges">
-              <span className="skill-badge">Pytest</span>
-              <span className="skill-badge">Jest</span>
-              <span className="skill-badge">Mocha/Chai</span>
-            </div>
-          </div>
-          
-          <div className="skill-category" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
             <h3>CI/CD</h3>
             <div className="skill-badges">
               <span className="skill-badge">Jenkins</span>
@@ -44,7 +35,7 @@ export default function Skills() {
             </div>
           </div>
           
-          <div className="skill-category" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+          <div className="skill-category" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
             <h3>Other</h3>
             <div className="skill-badges">
               <span className="skill-badge">Agile</span>
