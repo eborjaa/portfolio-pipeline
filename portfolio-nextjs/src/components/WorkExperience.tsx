@@ -20,10 +20,13 @@ export default function WorkExperience() {
             </div>
             <div className="experience-content">
               <ul>
-                <li>Plan, scope, and prioritize testing efforts in collaboration with stakeholders to align with product goals</li>
-                <li>Enhance and extend automation frameworks, writing maintainable and scalable code to support product features</li>
-                <li>Automate test reports and manage test execution through Jenkins CI, leading to a 30% increase in efficiency</li>
-                <li>Lead regression testing, project management, and test automation initiatives, reducing defect leakage by 25%</li>
+                <li>Plan, scope, and prioritize testing efforts in collaboration with stakeholders; lead regression testing and test automation initiatives, reducing defect leakage by 25%.</li>
+                <li>Enhance and extend automation frameworks, writing maintainable and scalable code; automate test reports and manage test execution through Jenkins CI, leading to a 30% increase in efficiency.</li>
+                <li>Standardized and implemented a <strong>Git-Flow branching strategy</strong> across the shared automation package used by all SaaS application teams, improving release stability and collaboration.</li>
+                <li>Designed and implemented an <strong>isolated package architecture</strong> for the test suite using a <strong>composition-based pattern</strong>, improving modularity, reuse, and maintainability across all automated tests.</li>
+                <li>Spearhead automation efforts for the <strong>Generative Marketing application</strong> (AI-driven personalized marketing content), achieving 100% automation and reducing manual testing time by 50%.</li>
+                <li>Implement Page Object Model (POM), Component Object Model (COM), and graph-based testing strategies, ensuring a 100% pass rate across test cycles.</li>
+                <li>Engineer and optimize backend functions to streamline test data generation, decreasing test failures and improving system reliability; champion 'shift-left' testing by integrating automated tests early in the development cycle.</li>
               </ul>
             </div>
           </div>
@@ -40,9 +43,9 @@ export default function WorkExperience() {
             </div>
             <div className="experience-content">
               <ul>
-                <li>Led regression and manual testing efforts for various product features, identifying and resolving critical defects</li>
-                <li>Increased test coverage by 40% by applying automation best practices and optimizing test suite efficiency</li>
-                <li>Collaborated with cross-functional teams to enhance test quality and streamline release cycles</li>
+                <li>Led regression and manual testing efforts for various product features, identifying and resolving critical defects; increased test coverage by 40% through automation best practices and test suite optimization.</li>
+                <li>Orchestrated QA automation for the <strong>Reliability (REL) application</strong>, overseeing patch release approvals and executing thorough regression testing.</li>
+                <li>Redesigned the REL repository using a structured POM framework, improving maintainability and eliminating redundancy; executed comprehensive testing and recertification strategies, ensuring smooth releases.</li>
               </ul>
             </div>
           </div>
