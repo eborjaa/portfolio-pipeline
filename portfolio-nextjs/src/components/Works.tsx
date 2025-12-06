@@ -1,35 +1,28 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
+import Image from "next/image";
 
 export default function Works() {
   const projects = [
     {
       id: 1,
-      title: 'Portfolio CI/CD Pipeline',
-      description: 'Automated Playwright tests triggered via Jenkins, generating HTML reports and artifact uploads with Newman',
-      category: 'Test Automation',
-      image: '/img/works/01.jpg',
-      technologies: ['Playwright', 'Jenkins', 'Newman', 'HTML Reports'],
-      github: 'https://github.com/eborjaa/portfolio-pipeline'
+      title: "Portfolio CI/CD Pipeline",
+      description:
+        "End-to-end CI/CD pipeline implementation with automated Playwright testing, Jenkins integration, and comprehensive reporting. Features automated test execution, HTML report generation, and artifact management with Newman for API testing.",
+      category: "DevOps & Test Automation",
+      image: "/img/works/01.jpg",
+      technologies: ["Playwright", "Jenkins", "Newman", "HTML Reports", "CI/CD"],
+      github: "https://github.com/eborjaa/portfolio-pipeline",
     },
     {
       id: 2,
-      title: 'Web Application Test Suite',
-      description: 'Led automation efforts achieving 100% test coverage and reducing manual testing time by 50%',
-      category: 'Test Automation',
-      image: '/img/works/02.jpg',
-      technologies: ['Playwright', 'POM', 'COM', 'Jenkins CI'],
-      github: '#'
-    },
-    {
-      id: 3,
-      title: 'Enterprise QA Automation',
-      description: 'Orchestrated QA automation for enterprise applications, overseeing patch release approvals and regression testing',
-      category: 'Quality Assurance',
-      image: '/img/works/03.jpg',
-      technologies: ['Selenium', 'POM Framework', 'Jenkins', 'Regression Testing'],
-      github: '#'
+      title: "Personal Portfolio Website",
+      description:
+        "Modern, responsive portfolio website built with Next.js and TypeScript. Features dark mode, smooth animations, contact form integration, and optimized performance. Showcases professional experience, skills, and projects with a clean, user-friendly interface.",
+      category: "Web Development",
+      image: "/img/works/02.jpg",
+      technologies: ["Next.js", "TypeScript", "React", "Tailwind CSS", "AOS"],
+      github: "https://github.com/eborjaa/portfolio-pipeline",
     }
   ];
 
@@ -51,13 +44,19 @@ export default function Works() {
               data-aos-delay={index * 300}
               data-aos-duration="1000"
             >
-              <a href={project.github} target="_blank" rel="noopener noreferrer">
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Image
                   className="project-img"
                   src={project.image}
                   alt={project.title}
-                  width={400}
-                  height={300}
+                  fill
+                  sizes="380px"
+                  style={{ objectFit: 'cover' }}
+                  unoptimized={true}
                 />
                 <div className="project-mask">
                   <div className="project-caption">

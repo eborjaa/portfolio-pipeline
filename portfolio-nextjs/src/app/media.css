@@ -26,7 +26,8 @@
   }
 
   .project-box {
-    max-width: 454px;
+    width: 360px;
+    height: 265px;
   }
 
   .about,
@@ -139,7 +140,9 @@
   }
 
   .project-box {
+    width: 100%;
     max-width: 327px;
+    height: 240px;
   }
 
   .about,

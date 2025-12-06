@@ -600,9 +600,12 @@ html[data-theme="dark"] .hero {
 }
 
 .projects-row {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   gap: 30px;
+  max-width: 100%;
 }
 
 .project-box {
@@ -611,6 +614,15 @@ html[data-theme="dark"] .hero {
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  width: 380px;
+  height: 280px;
+  flex-shrink: 0;
+}
+
+.project-box a {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .project-box:hover {
@@ -619,8 +631,9 @@ html[data-theme="dark"] .hero {
 
 .project-img {
   width: 100%;
-  height: 250px;
+  height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 .project-mask {
@@ -705,6 +718,11 @@ html[data-theme="dark"] .hero {
   }
   
   .projects-row {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .project-box {
+    max-width: 100%;
   }
 }
